@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="playerData" load_steps=2 format=3 uid="uid://cdpiwi7ss1uns"]
+
+[ext_resource type="Script" path="res://src/Scripts/Battle/Player/playerData.cs" id="1_1je3x"]
+
+[resource]
+script = ExtResource("1_1je3x")
+fighterName = "Vulpes"
+Level = 1
+Speed = 0
+Attack = 5
+PhysDefense = 0
+MagicDefense = 0
+maxHP = 10
+currentHP = 10
+maxMP = 10
+currentMP = 10
+maxCommands = 0
+commands = null
+inventorySize = 12
+inventory = null

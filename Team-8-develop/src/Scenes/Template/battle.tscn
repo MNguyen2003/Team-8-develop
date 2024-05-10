@@ -1,0 +1,295 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4tcs1rh4107b"]
+
+[ext_resource type="Script" path="res://src/Scripts/Battle/General/BattleScreen.cs" id="1_bams4"]
+[ext_resource type="FontFile" uid="uid://ci5r77kkoj0i2" path="res://src/Fonts/Early GameBoy.ttf" id="2_d2omv"]
+[ext_resource type="Script" path="res://src/Scripts/Battle/General/ActionManager.cs" id="3_oc3kh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bams4")
+
+[node name="Menu" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -386.0
+offset_top = -252.0
+offset_right = 386.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="Menu/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel"]
+visible = false
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 36
+text = "s"
+
+[node name="Label2" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -2.0
+offset_right = 70.0
+offset_bottom = 21.0
+grow_vertical = 2
+text = "HP:10/10"
+
+[node name="Label3" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 70.0
+grow_vertical = 0
+text = "SP:10/10"
+
+[node name="Panel2" type="Panel" parent="Menu/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel2"]
+visible = false
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 36
+
+[node name="Label2" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -2.0
+offset_right = 70.0
+offset_bottom = 21.0
+grow_vertical = 2
+text = "HP:10/10"
+
+[node name="Label3" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel2"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 70.0
+grow_vertical = 0
+text = "SP:10/10"
+
+[node name="Panel3" type="Panel" parent="Menu/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel3"]
+visible = false
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 36
+text = "Knuckles"
+
+[node name="Label2" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel3"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -2.0
+offset_right = 70.0
+offset_bottom = 21.0
+grow_vertical = 2
+text = "HP:10/10"
+
+[node name="Label3" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel3"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 70.0
+grow_vertical = 0
+text = "SP:10/10"
+
+[node name="Panel4" type="Panel" parent="Menu/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(190, 100)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel4"]
+visible = false
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 36
+text = "Knuckles"
+
+[node name="Label2" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel4"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -2.0
+offset_right = 70.0
+offset_bottom = 21.0
+grow_vertical = 2
+text = "HP:10/10"
+
+[node name="Label3" type="Label" parent="Menu/VBoxContainer/HBoxContainer/Panel4"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 70.0
+grow_vertical = 0
+text = "SP:10/10"
+
+[node name="Panel" type="Panel" parent="Menu/VBoxContainer"]
+custom_minimum_size = Vector2(10, 400)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="DialogueBox" type="Panel" parent="Menu/VBoxContainer/Panel"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -125.0
+offset_right = 772.0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Menu/VBoxContainer/Panel/DialogueBox"]
+visible = false
+layout_mode = 1
+offset_right = 1020.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_d2omv")
+theme_override_font_sizes/font_size = 45
+text = "Hello World"
+
+[node name="Control" type="Control" parent="Menu/VBoxContainer/Panel/DialogueBox"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Buttons" type="HFlowContainer" parent="Menu/VBoxContainer/Panel/DialogueBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 27.0
+offset_top = 4.0
+offset_right = -306.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 26
+
+[node name="Button" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button6")
+focus_neighbor_right = NodePath("../Button2")
+focus_neighbor_bottom = NodePath("../Button4")
+focus_previous = NodePath("../Button6")
+theme_override_font_sizes/font_size = 35
+text = "Attack"
+
+[node name="Button2" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button")
+focus_neighbor_right = NodePath("../Button3")
+focus_neighbor_bottom = NodePath("../Button5")
+theme_override_font_sizes/font_size = 35
+text = "Skills"
+
+[node name="Button3" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button2")
+focus_neighbor_right = NodePath("../Button4")
+focus_neighbor_bottom = NodePath("../Button6")
+focus_next = NodePath("../Button4")
+theme_override_font_sizes/font_size = 35
+text = "Items"
+
+[node name="Button4" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button3")
+focus_neighbor_top = NodePath("../Button")
+focus_neighbor_right = NodePath("../Button5")
+theme_override_font_sizes/font_size = 35
+text = "Eqpt"
+
+[node name="Button5" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button4")
+focus_neighbor_top = NodePath("../Button2")
+focus_neighbor_right = NodePath("../Button6")
+theme_override_font_sizes/font_size = 35
+text = "Defend"
+
+[node name="Button6" type="Button" parent="Menu/VBoxContainer/Panel/DialogueBox/Buttons"]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Button5")
+focus_neighbor_top = NodePath("../Button3")
+focus_neighbor_right = NodePath("../Button")
+focus_next = NodePath("../Button")
+theme_override_font_sizes/font_size = 35
+text = "Flee"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -121.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Action Manager" type="Node" parent="."]
+script = ExtResource("3_oc3kh")
+
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button" to="Action Manager" method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button2" to="Action Manager" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button3" to="Action Manager" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button4" to="Action Manager" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button5" to="Action Manager" method="_on_button_5_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/Panel/DialogueBox/Buttons/Button6" to="Action Manager" method="_on_button_6_pressed"]

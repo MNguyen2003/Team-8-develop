@@ -1,0 +1,16 @@
+[0,1,0]
+-1,0,1,0|||src/Scenes/Level/Areas/Test/Test_1.tscn
+[1,1,0]
+0,0,-1,0||1|src/Scenes/Level/Areas/Test/Test_1.tscn
+[-1,-1,0]
+0,-1,0,0|||src/Scenes/Level/Areas/Test/Test_2.tscn
+[-1,0,0]
+0,-1,0,-1|||src/Scenes/Level/Areas/Test/Test_2.tscn
+[-1,1,0]
+1,0,0,-1|||src/Scenes/Level/Areas/Test/Test_2.tscn
+[1,-1,1]
+0,-1,0,0|||src/Scenes/Level/Areas/Test/Test_Ind_1.tscn
+[1,0,1]
+0,-1,0,-1|||src/Scenes/Level/Areas/Test/Test_Ind_1.tscn
+[1,1,1]
+0,0,0,-1||1|src/Scenes/Level/Areas/Test/Test_Ind_1.tscn
